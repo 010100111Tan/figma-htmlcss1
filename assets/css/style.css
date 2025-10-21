@@ -8,4 +8,99 @@ html{
 
 body{
     font-size: 1.6rem;
+    font-family: "Lobster", sans-serif;
 }
+
+/* ====common===== */
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 120px;
+    padding: 0px 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #171100;
+    font-size: 1.6rem;
+    font-weight: 6001;
+    border-radius: 25px;
+    
+}
+
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 50px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ====header===== */
+
+.header{
+    background-color: pink;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header .body{
+    display: flex;
+    align-items: center;
+    padding: 30px 0 10px;
+}
+
+.nav{
+    margin-left: auto;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav a{
+    color: #5f5b53;
+    font-size: 20px;
+    /* line-height: 40px; */
+    margin: 10px 20px;
+    position: relative;
+}
+.nav li.active a,
+.nav a:hover {
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    left: 1px;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: red;
+
+
+}
+
+.header .btn-sign-up{
+    min-width: 150px;
+}
+
+ .header .action{
+margin-left: 50px;
+}
+
+.header .action{
+    margin-left: 50px;
+}
+
+p{
+    text-align: center;
+}
+

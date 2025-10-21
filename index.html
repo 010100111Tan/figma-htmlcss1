@@ -3,12 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Reset CSS: xóa style mặc định của trình duyệt -->
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- 2. Kết nối trước (tăng tốc tải font Google) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 3. Nhúng các font chữ từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Condiment&family=Lobster&family=Roboto:wght@300&family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
+    <!-- 4. File CSS chính của bạn (style web) -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Figma làm web</title>
+    <title>Shop V2</title>
 </head>
-<body>
-    <h1>Figma làm web</h1>
-    <h2>demo</h2>
+<body style="height:10000px;">
+<!-- header-->
+ <header class="header fixed">
+    <div class="main-content">
+        <div class="body">
+            <!-- logo-->
+             <img src="./assets/img/Logo.svg" alt="Lesson" class="logo">
+             <!-- nav Thanh điều hướng-->
+        <nav class="nav">
+    <ul>
+        <li class="active">
+            <a href="#">Home</a>
+        </li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Reviews</a></li>
+    </ul>
+        </nav>
+              <!-- button action-->
+               <!--.action>a.btn{sign up}-->
+               <div class="action">
+                <a href="#" class="btn btn-sign-up">Sign up</a>
+               </div>
+        </div>
+    </div>
+ </header>
+ <p>Lorem ipsum dolor sit.</p>
 </body>
 </html>
