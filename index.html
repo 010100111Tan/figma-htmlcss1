@@ -1,46 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 1. Reset CSS: xóa style mặc định của trình duyệt -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <!-- 2. Kết nối trước (tăng tốc tải font Google) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- 3. Nhúng các font chữ từ Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Condiment&family=Lobster&family=Roboto:wght@300&family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
-    <!-- 4. File CSS chính của bạn (style web) -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- 🌐 Link CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Shop V2</title>
-</head>
-<body style="height:10000px;">
-<!-- header-->
- <header class="header fixed">
-    <div class="main-content">
-        <div class="body">
-            <!-- logo-->
-             <img src="./assets/img/Logo.svg" alt="Lesson" class="logo">
-             <!-- nav Thanh điều hướng-->
-        <nav class="nav">
-    <ul>
-        <li class="active">
-            <a href="#">Home</a>
-        </li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Reviews</a></li>
-    </ul>
-        </nav>
-              <!-- button action-->
-               <!--.action>a.btn{sign up}-->
-               <div class="action">
-                <a href="#" class="btn btn-sign-up">Sign up</a>
-               </div>
+  </head>
+
+  <body style="height: 10000px">
+    <!-- ================= HEADER ================= -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="header__body">
+          <!-- 🔸 Logo -->
+          <img
+            src="./assets/img/Logo.svg"
+            alt="Shop V2 Logo"
+            class="header__logo"
+          />
+
+          <!-- 🔸 Navigation -->
+          <nav class="header__nav">
+            <ul>
+              <li class="header__nav-item active">
+                <a href="#" class="header__nav-link">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Courses</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Pricing</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- 🔸 Action button -->
+          <div class="header__action">
+            <a href="#" class="btn btn--cta">Sign up</a>
+          </div>
         </div>
-    </div>
- </header>
- <p>Lorem ipsum dolor sit.</p>
-</body>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+      <!-- ========== HERO SECTION ========== -->
+      <section class="hero">
+        <div class="main-content">
+          <div class="hero__body">
+            <!-- 🔹 LEFT SIDE (Image + Cards) -->
+            <div class="hero__left">
+              <!-- 🖼 Main Image -->
+              <img
+                src="./assets/img/Trungthuv1.png"
+                alt="Bánh trung thu..."
+                class="hero__image"
+              />
+
+              <!-- 🧁 Course Cards -->
+              <div class="hero__card">
+                <!-- Card 1 -->
+                <div class="hero__card-item">
+                  <div class="hero__card-icon hero__card-icon--black">
+                    <img src="./assets/img icon/Cake1.png" alt="" />
+                  </div>
+                  <div class="hero__card-info">
+                    <p class="hero__card-label">20 Courses</p>
+                    <p class="hero__card-title">UI/UX Design</p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="hero__card-item">
+                  <div class="hero__card-icon hero__card-icon--blue">
+                    <img src="./assets/img icon/Cake2.png" alt="" />
+                  </div>
+                  <div class="hero__card-info">
+                    <p class="hero__card-label">20 Courses</p>
+                    <p class="hero__card-title">Development</p>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="hero__card-item">
+                  <div class="hero__card-icon hero__card-icon--teal">
+                    <img src="./assets/img icon/marketing.png" alt="" />
+                  </div>
+                  <div class="hero__card-info">
+                    <p class="hero__card-label">30 Courses</p>
+                    <p class="hero__card-title">Marketing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 🔹 RIGHT SIDE (Text + Stats) -->
+            <div class="hero__right">
+              <!-- 🌕 Heading -->
+              <h1 class="hero__heading">
+                Ánh trăng: Ánh trăng rằm tròn vành, sáng vằng vặc soi sáng cả
+                không gian.
+              </h1>
+
+              <!-- 📝 Description -->
+              <p class="hero__desc">
+                Bầu trời cao trong, không khí mát mẻ: Thời tiết cuối thu mang
+                đến cảm giác dễ chịu, se se lạnh, tạo điều kiện lý tưởng cho mọi
+                người ra ngoài vui chơi.
+              </p>
+
+              <!-- 🚀 CTA Buttons -->
+              <div class="hero__cta-group">
+                <a href="#" class="btn btn--primary">See Courses</a>
+                <button class="hero__watch-video">
+                  <div class="hero__watch-icon">
+                    <img src="./assets/img icon/mui-ten.png" alt="" />
+                  </div>
+                  <span>Watch video</span>
+                </button>
+              </div>
+
+              <!-- 📊 Stats -->
+              <p class="hero__desc hero__stats-label">Recent engagement</p>
+              <div class="hero__stats">
+                <div class="hero__stats-item">
+                  <strong>50k</strong>
+                  <span>Students</span>
+                </div>
+                <div class="hero__stats-item">
+                  <strong>70+</strong>
+                  <span>Courses</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
